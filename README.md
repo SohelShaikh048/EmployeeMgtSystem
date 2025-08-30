@@ -4,6 +4,11 @@
 ## Features                    <!-- H2 -->
 ### CRUD Operations            <!-- H3 -->
 
+1. Clone repo
+2. Update database
+3. Run project
+
+
 
 Features implemented:
 
