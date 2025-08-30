@@ -1,0 +1,41 @@
+﻿@model IEnumerable<tbl_Employee>
+
+<table class="table table-bordered">
+    <thead class="table-light">
+        <tr>
+            <th>Name</th>
+            <th>Email</th>
+            <th>Department</th>
+            <th>Hire Date</th>
+            <th>Salary</th>
+            <th style="width:150px;">Actions</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var emp in Model)
+        {
+            <tr>
+                <td>@emp.Name</td>
+                <td>@emp.Email</td>
+                <td>@emp.Department</td>
+                <td>@emp.HireDate.ToShortDateString()</td>
+                <td>@emp.Salary</td>
+                <td>
+                    <button class="btn btn-sm btn-warning btn-edit" data-id="@emp.Id">Edit</button>
+                    <button class="btn btn-sm btn-danger btn-delete" data-id="@emp.Id">Delete</button>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+<nav>
+    <ul class="pagination">
+        @for (int i = 1; i <= (int)ViewBag.TotalPages; i++)
+        {
+            <li class="page-item @(i == ViewBag.CurrentPage ? "active" : "")">
+                <a class="page-link" href="@Url.Action("Index", new { page = i })">@i</a>
+            </li>
+        }
+    </ul>
+</nav>
