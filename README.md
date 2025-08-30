@@ -2,7 +2,7 @@
 
 # Employee Management System   <!-- H1 -->
 ## Features                    <!-- H2 -->
-### CRUD Operations            <!-- H3 -->
+### CRUD Operations            
 
 1. Clone repo
 2. Update database
