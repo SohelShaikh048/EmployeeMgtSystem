@@ -8,7 +8,7 @@
 
 Features implemented:
 
-###Employee CRUD (Add, Edit, Delete, List)
+Employee CRUD (Add, Edit, Delete, List)
 PaginationValidation (custom + data annotations)
 Toastr notifications
 jQuery datepicker inside modals
