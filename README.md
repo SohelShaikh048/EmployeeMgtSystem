@@ -1,9 +1,5 @@
 # EmployeeMgtSystem
 
-# Employee Management System   <!-- H1 -->
-## Features                    <!-- H2 -->
-### CRUD Operations            
-
 1. Clone repo
 2. Update database
 3. Run project
